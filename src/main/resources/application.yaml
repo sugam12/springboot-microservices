@@ -1,0 +1,6 @@
+spring:
+  application:
+   name: database-service
+
+server:
+  port: 8081
