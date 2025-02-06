@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configurationServer
+  # we can use github repo for this as well
+  profiles:
+    active: native
+server:
+  port: 8096
+

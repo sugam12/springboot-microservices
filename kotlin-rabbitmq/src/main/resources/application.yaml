@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+rabbitmq:
+  queue:
+    name: queue_demo_message
+  exchange:
+    name: exchange_demo_message
+  routing:
+    key: routing_key_demo_message
+server:
+  port: 8091
