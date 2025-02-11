@@ -1,0 +1,11 @@
+server:
+  port: 8097
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8093/eureka
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

@@ -1,0 +1,27 @@
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: gateway
+  config:
+    import: "optional:configserver:http://localhost:8096"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+        - id: INVENTORY-SERVICE
+          uri: lb://inventory-service
+          predicates:
+            - Path=/inventory/**
+
+        - id: ORDER-SERVICE
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
+
+
+
+
