@@ -11,8 +11,8 @@ import java.util.List;
 @HttpExchange
 public interface InventoryClient {
 
-    @GetExchange("/employee/department/{departmentId}")
-    List<Inventory> findEmployeeByDepartment(@PathVariable("departmentId") Long departmentId);
+    @GetExchange("/inventory/order/{orderId}")
+    List<Inventory> findInventoryByDepartmentId(@PathVariable("orderId") Long orderId);
 
-    List<Inventory> findEmployeeByDepartment(Order order);
+    List<Inventory> findInventoryByDepartmentId(Order order);
 }

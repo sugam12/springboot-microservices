@@ -1,6 +1,9 @@
 server:
   port: 8095
 eureka:
+  # Adding  hostname: localhost helps to debug locally
+  instance:
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8093/eureka

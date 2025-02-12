@@ -27,7 +27,7 @@ public class WebClientConfig {
                         HttpClient.create()
                                 .resolver(DefaultAddressResolverGroup.INSTANCE)
                 ))
-                .baseUrl("http://eureka-client-b")
+                .baseUrl("http://inventory-service")
                 .filter(filterFunction)
                 .build();
     }

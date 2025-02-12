@@ -1,6 +1,7 @@
 server:
   port: 8094
 eureka:
+  # Adding  hostname: localhost helps to debug locally
   instance:
     hostname: localhost
   client:

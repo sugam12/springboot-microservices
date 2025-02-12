@@ -35,11 +35,11 @@ public class BeanConfiguration {
     }*/
 
 
-    @Bean
+    /*@Bean
     @LoadBalanced
     public WebClient.Builder webClientBuilder() {
         HttpClient httpClient = HttpClient.create().resolver(DefaultAddressResolverGroup.INSTANCE);
         return WebClient.builder()
                 .clientConnector(new ReactorClientHttpConnector(httpClient));
-    }
+    }*/
 }

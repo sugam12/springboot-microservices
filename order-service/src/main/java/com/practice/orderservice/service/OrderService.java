@@ -59,7 +59,7 @@ public class OrderService {
         Order order = orderRepository.findById(id).orElseThrow();
        List<Inventory> inventoryByDepartment = null;
         try {
-            inventoryByDepartment = inventoryClient.findEmployeeByDepartment(order.getId());
+            inventoryByDepartment = inventoryClient.findInventoryByDepartmentId(order.getId());
         } catch (Exception exception) {
             exception.printStackTrace();
         }
