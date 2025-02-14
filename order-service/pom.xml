@@ -11,7 +11,8 @@
     <groupId>com.pratice</groupId>
     <artifactId>order-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eurekaclienta</name>
+    <packaging>pom</packaging>
+    <name>order-service</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>
